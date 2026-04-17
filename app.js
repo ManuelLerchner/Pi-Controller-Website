@@ -22,7 +22,6 @@ app.engine("hbs", exphbs({ defaultLayout: "main", extname: "hbs" }));
 
 app.use("/", require("./routes/controller"));
 app.use("/api", require("./routes/api"));
-app.use("/register", require("./routes/register"));
 
 app.get("/*", function (req, res) {
     res.redirect("/");
