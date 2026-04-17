@@ -1,0 +1,373 @@
+@media only screen {
+    .parallax img {
+        max-height: 160%;
+    }
+}
+
+.paralaxBig {
+    height: 75vh;
+}
+
+.card {
+    margin: 40px;
+
+    box-shadow: -6px -6px 20px 10px rgb(63, 143, 123), 6px 6px 20px 10px rgb(212, 133, 29);
+
+    box-shadow: -6px -6px 20px 10px rgb(113, 63, 143), 6px 6px 20px 10px rgb(245, 141, 6);
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    border: 2px solid black;
+}
+
+.cardWelcome {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    bottom: 10%;
+    width: 70vw;
+    border-left: 10px solid #06d2e0;
+}
+
+.card-title {
+    font-size: 40px !important;
+
+    font-weight: 500 !important;
+
+    text-shadow: 4px 3px 3px black, -2px 2px 3px black, 4px 4px 3px rgb(88, 88, 88),
+        4px -2px 3px rgb(61, 61, 61);
+}
+
+.card-image img {
+    filter: brightness(90%) contrast(120%) saturate(90%);
+}
+
+.card-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.date {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.top {
+    padding-top: 60px;
+}
+
+.marginTop {
+    margin-top: 40px;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.card-title {
+    font-size: 30 !important;
+}
+
+.card-content {
+    font-size: 16 !important;
+    padding: 10px !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.border {
+    box-shadow: -2px -2px 2px white, -2px 2px 2px white;
+}
+
+.header {
+    font-family: "Arial", "Helvetica", "sans-serif";
+    font-size: calc(3vw + 4vh + 2vmin);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: 7px 7px 2px black;
+}
+
+.subtext {
+    font-size: calc(1vw + 2vh + 1vmin);
+    font-family: "Arial", "Helvetica", "sans-serif";
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+}
+
+.blurr {
+    filter: blur(2px);
+}
+
+.bg {
+    background-color: #252526;
+}
+
+/* Scroll */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.activePage {
+    background-color: #565656;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.youtube a {
+    color: #ff0000;
+}
+
+.twitter a {
+    color: #1da1f2;
+}
+
+.github a {
+    color: aliceblue;
+}
+
+.Logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.LogoText {
+    margin-left: 86px;
+
+    font-family: Consolas, monaco, monospace;
+    font-size: 22px;
+}
+
+.logoImage {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes rainbow {
+    from {
+        filter: invert(20%) sepia(100%) saturate(1000%);
+    }
+    to {
+        filter: invert(20%) sepia(100%) saturate(1000%) hue-rotate(360deg);
+    }
+}
+
+.rainbow {
+    animation: rainbow 15s infinite;
+}
+
+.btn-small {
+    margin-left: 10px;
+}
+
+.controllerTitle {
+    font-size: 30px;
+}
+
+.controllerText {
+    font-size: 15px;
+}
+
+.controllerInfo {
+    font-size: 25px;
+}
+
+.controllerImage,
+.controllerImageBig {
+    height: auto;
+    width: auto;
+    max-width: 220px;
+    max-height: 280px;
+
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.controllerImageBig {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+input {
+    color: white;
+}
+
+.input-field .prefix {
+    color: white;
+}
+
+textarea {
+    color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px #263238 inset !important;
+    box-shadow: 0 0 0px 1000px #263238 inset !important;
+    -webkit-text-fill-color: white;
+}
+
+.footerText {
+    font-size: calc(0.3vw + 0.8vh + 0.5vmin);
+}
+
+.descriptionText {
+    font-size: calc(0.8vw + 0.9vh + 0.9vmin);
+}
+
+.marginLeft {
+    margin-left: 10vw;
+}
+
+.buttonOffsetLeft {
+    margin-left: 45px;
+}
+
+.marginRight {
+    margin-right: 10vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.projectTitle {
+    font-size: calc(1.5vw + 1.5vh + 0.8vmin);
+}
+
+.projectSubTitle {
+    font-size: calc(1.2vw + 1.2vh + 0.7vmin);
+}
+
+.projectText {
+    font-size: calc(0.6vw + 0.6vh + 0.5vmin);
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 1em;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid black;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid black;
+}
+
+ol {
+    border-collapse: collapse;
+    border-radius: 1em !important;
+    overflow: hidden !important;
+}
+
+.number {
+    font-weight: bold;
+}
+
+.hljs {
+    border-radius: 1em;
+    font-size: 20px;
+}
+
+pre {
+    margin: 0 !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+img {
+    image-rendering: crisp-edges;
+}
+.inlineImg,
+.inlineImgBig {
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 0.5em !important;
+    overflow: hidden !important;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.inlineImgBig {
+    width: 90%;
+}
+
+pre {
+    font-size: calc(0.4vw + 0.9vh + 0.6vmin) !important;
+}
+
+.contents {
+    line-height: 2 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fullheightImage {
+    height: 100% !important;
+}
+
+.card-image img:not(.controllerImage) {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.card {
+    border-radius: 10px !important;
+    border: none;
+    outline: 2px solid black !important;
+}
+
+.card-action {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.card-content {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-bottom: 20px !important;
+    overflow-y: auto !important;
+}
