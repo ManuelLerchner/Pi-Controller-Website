@@ -1,109 +1,109 @@
 <html lang="en">
-    <head>
-        <title>Controller</title>
-        <script defer src="/js/controller.js"></script>
-    </head>
+  <head>
+    <title>Controller</title>
+    <script defer src="/js/controller.js"></script>
+  </head>
 
-    <body class="bg">
+  <body class="bg">
 
-        <!-- Relay Card  -->
-        <div class="row">
-            <div class="col l10 s12 offset-l1">
+    <!-- Relay Card  -->
+    <div class="row">
+      <div class="col l10 s12 offset-l1">
 
-                <div class="card horizontal blue-grey darken-4">
-                    <!-- Image  -->
-                    <div class="card-image hide-on-med-and-down">
-                        <img class="controllerImage" src="/images/Relay.jpg" />
-                    </div>
-                    <div class="card-stacked">
+        <div class="card horizontal blue-grey darken-4">
+          <!-- Image  -->
+          <div class="card-image hide-on-med-and-down">
+            <img class="controllerImage" src="/images/Relay.jpg" />
+          </div>
+          <div class="card-stacked">
 
-                        <div class="row">
-                            <div class="row hide-on-med-and-up">
-                                <div class="col s12 offset-s1">
-                                    <h5 class="orange-text controllerTitle">Relay</h5>
-                                    <h5 class="light-blue-text controllerInfo" id="relayState_mobile">Current State: ???</h5>
-                                    <h5 class="light-blue-text controllerInfo hidden" id="relayResponse_mobile">None</h5>
-                                    <p class="grey-text text-lighten-4 controllerText">Register <a href="#register">here</a></p>
-                                </div>
-                            </div>
-                            <div class="col l3 offset-l1 s12 offset-s1 hide-on-small-only">
-                                <h5 class="orange-text controllerTitle">Relay</h5>
-                                <h5 class="light-blue-text controllerInfo" id="relayState_pc">Current State: ???</h5>
-                                <h5 class="light-blue-text controllerInfo hidden" id="relayResponse_pc">None</h5>
-                                <p class="grey-text text-lighten-4 hide-on-med-and-down controllerText">Here you can close a relay at my home.</p>
-                                <p class="grey-text text-lighten-4 controllerText">Register <a href="#register">here</a></p>
-                            </div>
-
-                            <!-- Login -->
-                            <form id="form_relay" autocomplete="on">
-                                <div class="row">
-                                    <div class="col s10 l7">
-                                        <div class="input-field col s12 offset-s1">
-                                            <i class="material-icons prefix">people</i>
-                                            <input id="first_name_relay" name="first_name_relay" type="text" class="validate white-text" />
-                                            <label for="first_name_relay">Name</label>
-                                        </div>
-                                        <div class="input-field col s12 offset-s1">
-                                            <i class="material-icons prefix">mode_edit</i>
-                                            <input id="password_relay" name="password_relay" class="validate white-text" type="password" />
-                                            <label for="password_relay">Password</label>
-                                        </div>
-                                        <div class="input-field col s12 offset-s1 white-text">
-                                            <i class="material-icons Small prefix">send</i>
-                                            <button class="btn-small waves-effect waves-light buttonOffsetLeft" type="submit" name="action" value="Relay">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-
-                    </div>
+            <div class="row">
+              <div class="row hide-on-med-and-up">
+                <div class="col s12 offset-s1">
+                  <h5 class="orange-text controllerTitle">Relay</h5>
+                  <h5 class="light-blue-text controllerInfo" id="relayState_mobile">Current State: ???</h5>
+                  <h5 class="light-blue-text controllerInfo hidden" id="relayResponse_mobile">None</h5>
+                  <p class="grey-text text-lighten-4 controllerText">Register <a href="#register">here</a></p>
                 </div>
-            </div>
-        </div>
+              </div>
+              <div class="col l3 offset-l1 s12 offset-s1 hide-on-small-only">
+                <h5 class="orange-text controllerTitle">Relay</h5>
+                <h5 class="light-blue-text controllerInfo" id="relayState_pc">Current State: ???</h5>
+                <h5 class="light-blue-text controllerInfo hidden" id="relayResponse_pc">None</h5>
+                <p class="grey-text text-lighten-4 hide-on-med-and-down controllerText">Here you can close a relay at my home.</p>
+                <p class="grey-text text-lighten-4 controllerText">Register <a href="#register">here</a></p>
+              </div>
 
-        <!-- Register Card -->
-        <div class="row" id="register">
-            <div class="col l6 offset-l3 m8 offset-m2 s12">
-                <div class="card blue-grey darken-4" style="padding: 16px 24px 8px;">
-                    <h5 class="orange-text" style="margin: 0 0 4px;">Register</h5>
-                    <p class="grey-text text-lighten-2" style="margin: 0 0 8px; font-size:13px;">Request access to the controller — I'll approve your account manually.</p>
-                    <h6 class="light-blue-text hidden" id="registerResponse_pc" style="margin:0 0 8px;"></h6>
-                    <h6 class="light-blue-text hidden" id="registerResponse_mobile" style="margin:0 0 8px;"></h6>
-
-                    <form id="register_contact">
-                        <div class="row" style="margin-bottom:0">
-                            <div class="input-field col s6" style="margin-bottom:0">
-                                <i class="material-icons prefix" style="font-size:18px; top:10px;">people</i>
-                                <input id="name_register" name="name_register" type="text" class="validate white-text" style="margin-left:30px; width:calc(100% - 30px);" />
-                                <label for="name_register" style="margin-left:30px;">Name</label>
-                            </div>
-                            <div class="input-field col s6" style="margin-bottom:0">
-                                <i class="material-icons prefix" style="font-size:18px; top:10px;">mail_outline</i>
-                                <input id="email_register" name="email_register" type="email" class="validate white-text" style="margin-left:30px; width:calc(100% - 30px);" />
-                                <label for="email_register" style="margin-left:30px;">Email</label>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-bottom:0">
-                            <div class="input-field col s6" style="margin-bottom:0">
-                                <i class="material-icons prefix" style="font-size:18px; top:10px;">mode_edit</i>
-                                <input id="password_register1" name="password_register1" type="password" class="validate white-text" style="margin-left:30px; width:calc(100% - 30px);" />
-                                <label for="password_register1" style="margin-left:30px;">Password</label>
-                            </div>
-                            <div class="input-field col s6" style="margin-bottom:0">
-                                <i class="material-icons prefix" style="font-size:18px; top:10px;">mode_edit</i>
-                                <input id="password_register2" name="password_register2" type="password" class="validate white-text" style="margin-left:30px; width:calc(100% - 30px);" />
-                                <label for="password_register2" style="margin-left:30px;">Confirm</label>
-                            </div>
-                        </div>
-                        <div style="margin: 4px 0 8px;">
-                            <button class="btn-small waves-effect waves-light" type="submit">Register</button>
-                        </div>
-                    </form>
+              <!-- Login -->
+              <form id="form_relay" autocomplete="on">
+                <div class="row">
+                  <div class="col s10 l7">
+                    <div class="input-field col s12 offset-s1">
+                      <i class="material-icons prefix">people</i>
+                      <input id="first_name_relay" name="first_name_relay" type="text" class="validate white-text" />
+                      <label for="first_name_relay">Name</label>
+                    </div>
+                    <div class="input-field col s12 offset-s1">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <input id="password_relay" name="password_relay" class="validate white-text" type="password" />
+                      <label for="password_relay">Password</label>
+                    </div>
+                    <div class="input-field col s12 offset-s1 white-text">
+                      <i class="material-icons Small prefix">send</i>
+                      <button class="btn-small waves-effect waves-light buttonOffsetLeft" type="submit" name="action" value="Relay">Close</button>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
+              </form>
 
-    </body>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Card -->
+    <div class="row" id="register">
+      <div class="col l6 offset-l3 m8 offset-m2 s12">
+        <div class="card blue-grey darken-4" style="padding: 16px 24px 8px;">
+          <h5 class="orange-text" style="margin: 0 0 4px;">Register</h5>
+          <p class="grey-text text-lighten-2" style="margin: 0 0 8px; font-size:13px;">Request access to the controller — I'll approve your account manually.</p>
+          <h6 class="light-blue-text hidden" id="registerResponse_pc" style="margin:0 0 8px;"></h6>
+          <h6 class="light-blue-text hidden" id="registerResponse_mobile" style="margin:0 0 8px;"></h6>
+
+          <form id="register_contact">
+            <div class="row" style="margin-bottom:0">
+              <div class="input-field col s6" style="margin-bottom:0">
+                <i class="material-icons prefix" style="font-size:18px; top:10px;">people</i>
+                <input id="name_register" name="name_register" type="text" class="validate white-text" style="margin-left:30px; width:calc(100% - 30px);" />
+                <label for="name_register" style="margin-left:30px;">Name</label>
+              </div>
+              <div class="input-field col s6" style="margin-bottom:0">
+                <i class="material-icons prefix" style="font-size:18px; top:10px;">mail_outline</i>
+                <input id="email_register" name="email_register" type="email" class="validate white-text" style="margin-left:30px; width:calc(100% - 30px);" />
+                <label for="email_register" style="margin-left:30px;">Email</label>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:0">
+              <div class="input-field col s6" style="margin-bottom:0">
+                <i class="material-icons prefix" style="font-size:18px; top:10px;">mode_edit</i>
+                <input id="password_register1" name="password_register1" type="password" class="validate white-text" style="margin-left:30px; width:calc(100% - 30px);" />
+                <label for="password_register1" style="margin-left:30px;">Password</label>
+              </div>
+              <div class="input-field col s6" style="margin-bottom:0">
+                <i class="material-icons prefix" style="font-size:18px; top:10px;">mode_edit</i>
+                <input id="password_register2" name="password_register2" type="password" class="validate white-text" style="margin-left:30px; width:calc(100% - 30px);" />
+                <label for="password_register2" style="margin-left:30px;">Confirm</label>
+              </div>
+            </div>
+            <div style="margin: 4px 0 8px;">
+              <button class="btn-small waves-effect waves-light" type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
