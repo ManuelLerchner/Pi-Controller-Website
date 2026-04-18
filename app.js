@@ -24,7 +24,7 @@ app.use("/", require("./routes/controller"));
 app.use("/api", require("./routes/api"));
 
 app.get("/*", function (req, res) {
-    res.redirect("/");
+  res.redirect("/");
 });
 
 const server = http.createServer(app);
@@ -33,10 +33,11 @@ const io = new Server(server);
 const ioHandler = new HandleIO(io);
 ioHandler.handleEvents();
 
-const PORT = process.env.NODE_ENV === "developement"
-    ? (process.env.HTTP_DEV_PORT || 3001)
-    : (process.env.HTTP_PORT || 3001);
+const PORT =
+  process.env.NODE_ENV === "developement"
+    ? process.env.HTTP_DEV_PORT || 3001
+    : process.env.HTTP_PORT || 3001;
 
 server.listen(PORT, () =>
-    console.log(`Pi-Controller running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+  console.log(`Pi-Controller running in ${process.env.NODE_ENV} mode on port ${PORT}`)
 );
