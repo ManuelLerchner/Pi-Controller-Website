@@ -19,12 +19,8 @@ router.post("/relay", async (req, res) => {
         return;
     }
 
-    try {
-        username = req.body.username;
-        password = req.body.password;
-    } catch (err) {
-        res.sendStatus(400);
-    }
+    const username = req.body?.username;
+    const password = req.body?.password;
 
     if (!username || !password) {
         res.sendStatus(400);
@@ -37,7 +33,7 @@ router.post("/relay", async (req, res) => {
         Relay.activateRelay(process.env.RELAY_ON_TIME);
         res.sendStatus(200);
         Email.sendMail("RaspberryPi Door-Service", `${username} just opened the Door!`, true);
-    } else if (response != null) {
+    } else if (response !== null) {
         res.sendStatus(401);
     } else {
         res.sendStatus(500);

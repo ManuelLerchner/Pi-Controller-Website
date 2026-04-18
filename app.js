@@ -33,7 +33,7 @@ const io = new Server(server);
 const ioHandler = new HandleIO(io);
 ioHandler.handleEvents();
 
-const PORT = process.env.NODE_ENV == "developement"
+const PORT = process.env.NODE_ENV === "developement"
     ? (process.env.HTTP_DEV_PORT || 3001)
     : (process.env.HTTP_PORT || 3001);
 

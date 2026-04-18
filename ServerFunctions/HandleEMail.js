@@ -62,7 +62,7 @@ class EMailService {
         }
 
         receivers.forEach((receiver) => {
-            if (process.env.NODE_ENV == "developement") {
+            if (process.env.NODE_ENV === "developement") {
                 console.log(`Surpressed Sending email '${subject}' - '${text.replace(/\n/g, " ")}' to '${receiver}'`);
             } else {
                 const mailOptions = {
@@ -72,7 +72,7 @@ class EMailService {
                     text: text,
                 };
 
-                this.transporter.sendMail(mailOptions, function (error, info) {
+                this.transporter.sendMail(mailOptions, function (error) {
                     if (error) {
                         console.error(error);
                     } else {

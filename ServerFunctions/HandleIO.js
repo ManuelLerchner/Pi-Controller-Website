@@ -25,7 +25,7 @@ class HandleIO {
         let clientIp;
         try {
             clientIp = socket.request.headers["x-forwarded-for"];
-        } catch (e) {}
+        } catch {}
         return clientIp ?? socket.request.connection._peername.address;
     }
 

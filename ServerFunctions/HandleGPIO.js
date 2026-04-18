@@ -26,7 +26,7 @@ try {
         }
 
         on() {
-            if (process.env.NODE_ENV == "developement") {
+            if (process.env.NODE_ENV === "developement") {
                 console.log("Suppressed turning Relay ON");
             } else {
                 LED.writeSync(0);
@@ -35,7 +35,7 @@ try {
         }
 
         off() {
-            if (process.env.NODE_ENV == "developement") {
+            if (process.env.NODE_ENV === "developement") {
                 console.log("Suppressed turning Relay OFF");
             } else {
                 LED.writeSync(1);
@@ -43,7 +43,7 @@ try {
             }
         }
     };
-} catch (err) {
+} catch {
     module.exports = class RelayGPIO_PC {
         activateRelay(time) {
             this.on();
@@ -57,14 +57,14 @@ try {
         }
 
         on() {
-            if (process.env.NODE_ENV == "developement") {
+            if (process.env.NODE_ENV === "developement") {
                 console.log("Suppressed turning Relay ON");
             } else {
                 console.log("Turning Relay ON on PC");
             }
         }
         off() {
-            if (process.env.NODE_ENV == "developement") {
+            if (process.env.NODE_ENV === "developement") {
                 console.log("Suppressed turning Relay OFF");
             } else {
                 console.log("Turning Relay OFF on PC");

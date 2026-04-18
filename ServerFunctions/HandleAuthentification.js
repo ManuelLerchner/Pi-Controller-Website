@@ -7,7 +7,7 @@ class Authentification {
     async login(data) {
         let { username, password } = data;
 
-        if (mongoose.connection.readyState != 1) {
+        if (mongoose.connection.readyState !== 1) {
             console.log(`Login of ${username} failed: Mongoose Connection Error`)
             return [false, "Internal Server Error"];
         }
@@ -26,7 +26,7 @@ class Authentification {
             return [false, "Wrong Username or Password"];
         }
 
-        if (!UserInDB.activated == true) {
+        if (UserInDB.activated !== true) {
             return [false, "User not accepted yet"];
         }
 
@@ -38,13 +38,13 @@ class Authentification {
     async register(data) {
         let { username, email, password1, password2 } = data;
 
-        if (mongoose.connection.readyState != 1) {
+        if (mongoose.connection.readyState !== 1) {
             console.log(`Registration of ${username} failed: Mongoose Connection Error`)
             return [false, "Internal Server Error"];
         }
 
         let inputIsValid =
-            username != "" && email != "" && password1 != "" && password2 != "";
+            username !== "" && email !== "" && password1 !== "" && password2 !== "";
 
         let passwordsEqual = password1 === password2;
 
